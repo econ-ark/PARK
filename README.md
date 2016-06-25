@@ -1,4 +1,2 @@
 # PARK
-Presentations About the ARK Project
-
-This directory contains presentations made describing the ARK project
+Presentations About the ARK Project, organized by date and event
