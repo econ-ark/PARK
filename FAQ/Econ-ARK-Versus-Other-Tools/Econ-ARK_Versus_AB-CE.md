@@ -1,17 +1,16 @@
-# What Is the Difference Between the Econ-ARK/HARK and [AB-CE](https://github.com/AB-CE/abce)
+# Difference Between Econ-ARK/HARK and [AB-CE](https://github.com/AB-CE/abce)?
 
-HARK's starting point is the rational, forward looking, optimizing framework that is at the heart of neoclassical economics.  
+Within the Econ-ARK, the HARK's starting point is the rational, forward looking, optimizing framework that is at the heart of neoclassical economics.  On the individual level, our approach is to first specify a dynamic problem that the agent faces:
 
-On the individual level, our approach is to first specify a dynamic problem that the agent faces:
-   0. The situations he might find himself in ("state space")
-      * e.g., how much wealth does he have, what is his income
-   0. The actions he can actually take in each state ("budget correspondence")
-      * There is some budget constraint that restricts feasible actions
-   0. What types of actions he can take ("control space")
-      * e.g., how much does he choose to spend
-   0. His preferences over states and control variables
-      * e.g., a utility function that says more consumption is better, or that the state of being a homeowner yields some pleasure
-   0. The ways in which choices of variables under his control affect his future and the ways in which his state (say, his wealth) changes depending on the choices of control variables (say, his consumption spending). 
+0. The situations he might find himself in ("state space")
+   * e.g., how much wealth does he have, what is his income
+0. The actions he can actually take in each state ("budget correspondence")
+   * There is some budget constraint that restricts feasible actions
+0. What types of actions he can take ("control space")
+   * e.g., how much does he choose to spend
+0. His preferences over states and control variables
+   * e.g., a utility function that says more consumption is better, or that the state of being a homeowner yields some pleasure
+0. The ways in which choices of variables under his control affect his future and the ways in which his state (say, his wealth) changes depending on the choices of control variables (say, his consumption spending). 
 
 These elements imply an optimal policy function -- the plan (say, for consumption spending given income and wealth) that best satisfies the agent's preferences. 
 
@@ -22,7 +21,7 @@ There's sometimes an additional layer to the problem, where agents have "beliefs
 The traditional "rational expectations" assumption is the default in our modeling setup.  In this case, agents are endowed with the beliefs such that, if everyone holds those beliefs, the actual true outcome 
 corresponds to those beliefs. (The "rational expectations" beliefs are in a sense a self-fulfilling prophecy).
 
-The toolkit allows us to deviate from this framework, in the sense that agents might make mistakes, or not have full information, or have incorrect perceptions of the problem they face, etc. But everything we do in HARK is grounded in the concept of agents who are *trying* to make themselves as best off as possible.
+The toolkit allows us to deviate from this framework, in the sense that agents might make random or systematic mistakes, or not have full information, or have incorrect perceptions of the problem they face, etc. But an important design principle is always to formulate our agents' behaviors in terms of deviations from the benchmark of the rational model that is widely used, and universally understood, in the economics literature. Since the benchmark rational are making themselves as well off as possible, this approach gives us the ability to measure the consequences, to agents' well being, of any ways in which their actual behavior deviates from optimal behavior.
 
 Most of the machinery in HARK is the set of tools required to solve this "optimal choice in a stochastic world" problem. Most of the rest of the tools are those required to simulate a population of agents behaving according to some  set of rules.
 
