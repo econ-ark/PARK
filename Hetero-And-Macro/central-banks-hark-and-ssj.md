@@ -1,29 +1,44 @@
-# A Tour of the Econ-ARK Project
+# Econ-ARK for Central Banks
 
 Presentation at Sveriges Riksbank
+
 2024-10
 
+
 Christopher Carroll
+
 Johns Hopkins University 
 
-## History in a nutshell
-<--! I'm going to review this very quickly to set the scene -->
+[Powered By Econ-ARK](link to button)
 
-### Prehistory of Microfoundations of Macro:
+<!-- Conventions
+## marks a new slide
+### marks a header in a slide
+-->
+
+## Microfoundations in a Nutshell
+<!-- I'm going to review this very quickly to set the scene -->
+
+### Prehistory
 	- Modigliani and Brumberg (1954), Friedman (1957), Diamond (1964)
+	- Perfect Foresight models: 1960s-70s
 	
 ### Bewley (1977)
     - Formalization of Friedman PIH
-	- Rigorous treatment of uncertainty
-	- Entirely qualitative
+	- Rigorous treatment of uncertainty, liq constr
+	- Entirely qualitative/analytical
 
 ### Early 1990s: Numerical computation of SS dist'n of wealth
-	- Zeldes (1989); Deaton (1991); Carroll (1992); Hubbard, Skinner, and Zeldes (1994, 1995)
-	- Aiyagari (1994), Huggett (1996), Carroll (1997)
-	- But: predicting aggregate _dynamics_?
-		- hopeless: requires predicting evolution of entire _distribution_
+	- Life Cycle/OLG:
+		- Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
+		- Hugget (1996); Carroll (1997)
+	- Infinite Horizon
+		- Deaton (1991); Carroll (1992); Aiyagari (1994)
+	- Aggregate _dynamics_? Hopeless:
+		- requires predicting evolution of entire _distribution_
 
-<--! new slide --> 
+<!-- new slide --> 
+## Dynamics
 
 ### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
    - _mean_ of distribution $\bar{k}$ is good enough!
@@ -32,12 +47,12 @@ Johns Hopkins University
 ### Reiter (2010): 
    - SS Micro and Dyn Macro _can be solved independently_
 	 - _Why_? Idiosyncratic shocks 100x larger than agg
-	 - So agg shocks $\approx$ 'small' perturbation of dstn
-   - $\Rightarrow$ Singularity: 2014-2018
+	 - So agg shocks cause 'small' perturbation of dstn
+   - $\Rightarrow$ Reiter Singularity: 2014-2018
    - Culmination: "Sequence Space Jacobian" Toolkit: <!-- link -->
-     - Bring us your micro SS
+     - Bring us your micro SS ...
 	   - With Jacobians wrt PF aggregate shocks
-	 - We'll give you the dynamic macro
+	 - ... We'll give you the dynamic macro
 
 ## Where Does Econ-ARK Fit in this Narrative?
 
@@ -57,30 +72,38 @@ Johns Hopkins University
   - [Datasets](All the SCFs, with tools)
 - Sophisticated Liquidity Constraints
   - [Higher rate for borrowing vs saving](link me)
-  - [withdrawal penalties for retirement saving](Mateo VG)
+  - [withdrawal penalties for retirement saving](Mateo VG JMP)
+- etc etc
 
 ### ... Easy to Connect to SSJ toolkit
 
 Steps:
-1. Solve for micro steady state (MSS)
-2. Compute Jacobians needed for SSJ
-   - Easy once you have MSS
-   - (For inf horiz models; harder for LC)
-3. Feed results to SSJ toolkit
+1. Econ-ARK/HARK:
+   1. solve for micro steady state
+   1. Compute Jacobians 
+2. Feed results to SSJ toolkit
 
 - Documentation Notebooks
+  - (links to all three of our SSJ documentation notebooks)
+
+<!-- Here I will divert to a live demo of the notebook Akshay is working on -->
+
 - Papers:
-  - Will Du: 
-    - HANK meets Scarring
-  - Mateo Velasquez-Giraldo:
+  - Will Du: JMP
+    - [HANK with Scarring](link me)
+  - Bence Barosczy and Mateo Velasquez-Giraldo:
 	- "HANK Comes of Age"
+  - In progress:
+	- [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
-### Indirect Inference (MSM)
+## But Wait, There's More: Indirect Inference (MSM)
 
-Life Cycle Model (Gourinchas-Parker; Cagetti)
+### Life Cycle Model (Gourinchas-Parker; Cagetti)
+
+- [SolvingMicroDSOPs-Estimation](link me)
+
 - With Bequests? (DeNardi)
-
-[TRP Model Notebook](link me)
+  - [TRP Model Notebook](link me)
 
 ### REMARKs
 
