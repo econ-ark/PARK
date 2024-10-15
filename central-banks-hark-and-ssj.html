@@ -438,7 +438,7 @@ Christopher D. Carroll
 <li>Econ-ARK/HARK:
 <ol type="1">
 <li>solve for micro steady state</li>
-<li>Compute Jacobians</li>
+<li>compute Jacobians</li>
 </ol></li>
 <li>Feed results to SSJ toolkit</li>
 </ol>
@@ -452,11 +452,9 @@ Christopher D. Carroll
 <ul>
 <li>Papers:
 <ul>
-<li>Will Du: JMP <a href="link%20me">HANK with Scarring</a></li>
-<li>Bence Barosczy and Mateo Velasquez-Giraldo:</li>
-<li>“HANK Comes of Age”</li>
-<li>In progress:</li>
-<li><a href="https://llorracc.github.io/HAFiscal">Welfare and Spending Effects of Consumption Stimulus Policies</a></li>
+<li>Will Du: <a href="link%20me">HANK with Scarring</a></li>
+<li>Bence Barosczy and Mateo Velasquez-Giraldo: “HANK Comes of Age”</li>
+<li>In progress: <a href="https://llorracc.github.io/HAFiscal">Welfare and Spending Effects of Consumption Stimulus Policies</a></li>
 </ul></li>
 </ul>
 </section>
@@ -477,7 +475,7 @@ Christopher D. Carroll
 <li>on any computer (Mac, Win, Linux)</li>
 <li>using any open-source language
 <ul>
-<li>python, R, julia, …</li>
+<li>Python, R, Julia, …</li>
 </ul></li>
 <li><a href="https://econ-ark.org/materials">About 26</a></li>
 </ul></li>
@@ -490,10 +488,7 @@ Christopher D. Carroll
 </ul></li>
 <li>Aim:
 <ul>
-<li>Set a standard for journals
-<ul>
-<li>Now every journal has different requirements</li>
-</ul></li>
+<li>Set a standard for journals -Now every journal has different requirements</li>
 <li>Results should be replicable <em>on submission</em>
 <ul>
 <li>Editors, referees can ‘kick the tires’</li>
@@ -502,24 +497,45 @@ Christopher D. Carroll
 </ul></li>
 </ul></li>
 </ul>
-<h3 id="where-are-we-going">Where Are We Going?</h3>
-<p>‘DYNARK’: - Model specification tools for ANY Bellman Problem - <a href="link%20me%20to%20latest%20pseudocode">mockup</a></p>
-<p>Three layers: 1. Abstract mathematical description - The symbolic version that appears in the text - Describes the ‘Platonic Ideal’ of the model - What you would solve with <span class="math inline">\(\infty\)</span> computing power 2. Numerical/Approximation Details - Metaparameters like # of gridpoints for approx - Restrictions on ranges of parameters: - 1 &lt; CRRA &lt; 10 - 0.00 &lt; DiscFac &lt; 1.00 - 0.05 &lt; <span class="math inline">\(\sigma\)</span> &lt; 0.20 3. Specify Your Claims: - Concrete assertion about results: - ‘Model requires CRRA &gt; 8 to match portfolio share’</p>
 </section>
-<section id="why-these-elements" class="slide level2 scrollable">
-<h2>Why These Elements?</h2>
-<ol start="2" type="1">
-<li>and (3) allow AUTOMATIC robustness testing</li>
-</ol>
+<section id="where-are-we-going" class="slide level2 scrollable">
+<h2>Where Are We Going?</h2>
+<h3 id="dynark">‘DYNARK’:</h3>
 <ul>
+<li>Model specification tools for ANY Bellman Problem
+<ul>
+<li><a href="link%20me%20to%20latest%20pseudocode">mockup</a></li>
+</ul></li>
+<li>Three layers:
+<ol type="1">
+<li>Abstract mathematical description
+<ul>
+<li>The symbolic version that appears in the text</li>
+<li>Describes the ‘Platonic Ideal’ of the model</li>
+<li>What you would solve with <span class="math inline">\(\infty\)</span> computing power</li>
+</ul></li>
+<li>Numerical/approximation details
+<ul>
+<li>Metaparameters like # of gridpoints for approx</li>
+<li>Restrictions on ranges of parameters (e.g.&nbsp;1 &lt; CRRA &lt; 10)</li>
+</ul></li>
+<li>Specify your claims:
+<ul>
+<li>Concrete assertion about results</li>
+<li>“Model requires CRRA &gt; 8 to match portfolio share”</li>
+</ul></li>
+</ol></li>
+</ul>
+</section>
+<section id="why-these-elements" class="slide level2">
+<h2>Why These Elements?</h2>
+<ul>
+<li>2 and 3 allow <strong>AUTOMATIC</strong> robustness testing</li>
 <li>For each approx
 <ul>
 <li>does claim fail as gridpoints increase?</li>
 </ul></li>
-<li>For each restriction
-<ul>
-<li>‘parameter sweep’ of values in allowed ranges</li>
-</ul></li>
+<li>For each restriction +‘parameter sweep’ of values in allowed ranges</li>
 </ul>
 </section>
 <section id="underlying-motivation-tower-of-babel-problem" class="slide level2 scrollable">
@@ -527,7 +543,7 @@ Christopher D. Carroll
 <ol type="1">
 <li>Lack of transparency
 <ul>
-<li>What exactly <em>is</em> your model?</li>
+<li>What exactly <strong>is</strong> your model?</li>
 <li>Lots of buried assumptions
 <ul>
 <li>Gridpoints, boundaries, distributions</li>
@@ -535,11 +551,24 @@ Christopher D. Carroll
 </ul></li>
 <li>Lack of replicability
 <ul>
-<li>Some notorious stories</li>
+<li>Some notorious stories
+<ul>
 <li>Only runs on Win 8.1 w Matlab 8.7.6.5 etc etc</li>
 </ul></li>
+</ul></li>
 </ol>
-<p>Causes: - Everyone writes their own code - Often inherited from advisor - Barriers to entry - Can take months just to get someone else’s model working - quicker to build on your own Byzantine legacy code</p>
+<h3 id="causes">Causes:</h3>
+<ul>
+<li>Everyone writes their own code
+<ul>
+<li>Often inherited from advisor</li>
+<li>Barriers to entry</li>
+</ul></li>
+<li>Can take months just to get someone else’s model working
+<ul>
+<li>Quicker to build on your own Byzantine legacy code</li>
+</ul></li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
