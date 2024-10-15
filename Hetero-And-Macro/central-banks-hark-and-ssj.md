@@ -93,7 +93,7 @@ Powered By [Econ-ARK](http://www.econ-ark.org)
 
 * Documentation Notebooks
     + [HARK and the Sequence Space Jacobian Method](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/SSJ_example.html)
-    + Computing Heterogeneous Agent Jacobians in HARK](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/Jacobian_Example.html)
+    + [Computing Heterogeneous Agent Jacobians in HARK](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/Jacobian_Example.html)
     + [Solving Krusell-Smith Model with HARK and SSJ](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/KS-HARK-presentation.html)
 
 * Papers:
@@ -106,7 +106,7 @@ Powered By [Econ-ARK](http://www.econ-ark.org)
 
 ### Life Cycle Model (Gourinchas-Parker; Cagetti)
 
-* [SolvingMicroDSOPs]: (https://github.com/econ-ark/SolvingMicroDSOPs)
+* [SolvingMicroDSOPs](https://github.com/econ-ark/SolvingMicroDSOPs) 
 
 * With Bequests? (DeNardi)
   - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb)
@@ -132,7 +132,7 @@ Powered By [Econ-ARK](http://www.econ-ark.org)
 
 ## Where Are We Going? 'DYNARK': {.smaller}
 
-* Model specification tools for **any** Bellman Problem [(mockup)](link me to latest pseudocode)
+* Model specification tools for **any** Bellman Problem [(mockup)](https://raw.githubusercontent.com/econ-ark/OverARK/refs/heads/master/Development/pablo/ModelOnlyBlockRework.yaml)
 * Three layers:
     1. Abstract mathematical description
         - The symbolic version that appears in the text
