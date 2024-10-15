@@ -244,7 +244,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -345,7 +344,7 @@ Christopher D. Carroll
 <p>2024-10</p>
 <p>Christopher Carroll</p>
 <p>Johns Hopkins University</p>
-<p><a href="link%20to%20button">Powered By Econ-ARK</a></p>
+<p>Powered By <a href="http://www.econ-ark.org">Econ-ARK</a></p>
 </section>
 <section id="microfoundations-in-a-nutshell-12" class="slide level2 smaller">
 <h2>Microfoundations in a Nutshell (1/2)</h2>
@@ -365,7 +364,7 @@ Christopher D. Carroll
 <h2>Microfoundations in a Nutshell (2/2)</h2>
 <h3 id="early-1990s-numerical-computation-of-ss-distn-of-wealth">Early 1990s: Numerical computation of SS dist’n of wealth</h3>
 <ul>
-<li>Life Cycle/OLG:
+<li>Life Cycle / OLG:
 <ul>
 <li>Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);</li>
 <li>Huggett (1996); Carroll (1997)</li>
@@ -374,7 +373,7 @@ Christopher D. Carroll
 <ul>
 <li>Deaton (1991); Carroll (1992); Aiyagari (1994)</li>
 </ul></li>
-<li>Aggregate <em>dynamics</em>? Hopeless:
+<li>Aggregate <strong>dynamics</strong>? Hopeless:
 <ul>
 <li>requires predicting evolution of entire <strong>distribution</strong></li>
 </ul></li>
@@ -382,7 +381,7 @@ Christopher D. Carroll
 </section>
 <section id="dynamics" class="slide level2 smaller">
 <h2>Dynamics</h2>
-<h3 id="krusell-smith-1998">Krusell-Smith (1998): <!-- somebody add link to our KS replication --></h3>
+<h3 id="krusell-smith-1998"><a href="https://econ-ark.org/materials/krusellsmith/">Krusell-Smith (1998)</a>:</h3>
 <ul>
 <li><em>mean</em> of distribution <span class="math inline">\(\bar{k}\)</span> is good enough!</li>
 <li>still excruciatingly slow</li>
@@ -396,7 +395,7 @@ Christopher D. Carroll
 </ul></li>
 <li><span class="math inline">\(\Rightarrow\)</span> Reiter Singularity: 2014-2018
 <ul>
-<li>Culmination: “Sequence Space Jacobian” Toolkit: <!-- link --></li>
+<li>Culmination: <a href="https://github.com/shade-econ/sequence-jacobian">“Sequence Space Jacobian” Toolkit</a>:</li>
 <li>Bring us your micro SS and Jacobians wrt PF aggregate shocks
 <ul>
 <li>…We’ll give you the dynamic macro</li>
@@ -407,23 +406,23 @@ Christopher D. Carroll
 <section id="where-does-econ-ark-fit-12" class="slide level2 smaller">
 <h2>Where Does Econ-ARK Fit? (1/2)</h2>
 <h3 id="rich-set-of-tools-for-ss-micro">Rich Set of Tools for SS Micro …</h3>
-<!-- Somebody please make links to relevant docs or REMARKs or DemARKs -->
 <ul>
-<li><a href="link%20me">Consumption/Saving</a></li>
-<li><a href="link%20me">Portfolio Choice</a></li>
-<li><a href="link%20me">Liquid and Illiquid Assets</a></li>
-<li><a href="link%20me">Discrete-Continuous Problems</a>: <a href="link%20me">DC-EGM tool</a></li>
-<li><a href="link%20me">Labor Supply</a>: <a href="link%20me">Keane and Imai</a></li>
-<li><a href="link%20me">Medical Expense Risk</a></li>
-<li><a href="link%20me">Life Cycle Modeling</a>: <a href="link%20me">solutions</a> and <a href="All%20the%20SCFs,%20with%20tools">datasets</a></li>
+<li><a href="https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsIndShockModel.html">Consumption/Saving</a></li>
+<li><a href="https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsPortfolioModel.html">Portfolio Choice</a></li>
+<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Liquid and Illiquid Assets</a></li>
+<li><a href="https://econ-ark.org/materials/dcegm-upper-envelope/">Discrete-Continuous Problems</a>: <a href="https://docs.econ-ark.org/Documentation/reference/tools/dcegm.html">DC-EGM tool</a></li>
+<li><a href="https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsLaborModel.html">Labor Supply</a>: <a href="https://docs.econ-ark.org/Documentation/reference/tools/incomeprocess.html">Keane and Imai</a></li>
+<li><a href="https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsMedModel.html">Medical Expense Risk</a></li>
+<li>Life Cycle Modeling: <a href="https://docs.econ-ark.org/examples/LifecycleModel/Cycles_tutorial.html">solutions</a> and <a href="https://docs.econ-ark.org/Documentation/reference/tools/incomeprocess.html">datasets</a></li>
 <li>Sophisticated Liquidity Constraints
 <ul>
-<li><a href="link%20me">Higher rate for borrowing vs saving</a></li>
-<li><a href="Mateo%20VG%20JMP">withdrawal penalties for retirement saving</a></li>
+<li><a href="https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsIndShockModel.html#HARK.ConsumptionSaving.ConsIndShockModel.KinkedRconsumerType">Higher rate for borrowing vs saving</a></li>
+<li><a href="https://mateovg.com/files/pdf/JMP_VelasquezGiraldoM.pdf">Withdrawal penalties for retirement saving</a></li>
 </ul></li>
+<li>Etc etc</li>
 </ul>
 </section>
-<section id="where-does-econ-ark-fit-22" class="slide level2 smaller scrollable">
+<section id="where-does-econ-ark-fit-22" class="slide level2 smaller">
 <h2>Where Does Econ-ARK Fit? (2/2)</h2>
 <h3 id="easy-to-connect-to-ssj-toolkit">…Easy to Connect to SSJ toolkit</h3>
 <ol type="1">
@@ -437,12 +436,14 @@ Christopher D. Carroll
 <ul>
 <li>Documentation Notebooks
 <ul>
-<li>(links to all three of our SSJ documentation notebooks)</li>
+<li><a href="https://docs.econ-ark.org/examples/ConsNewKeynesianModel/SSJ_example.html">HARK and the Sequence Space Jacobian Method</a></li>
+<li>Computing Heterogeneous Agent Jacobians in HARK](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/Jacobian_Example.html)</li>
+<li><a href="https://docs.econ-ark.org/examples/ConsNewKeynesianModel/KS-HARK-presentation.html">Solving Krusell-Smith Model with HARK and SSJ</a></li>
 </ul></li>
 <li>Papers:
 <ul>
 <li>Will Du: <a href="link%20me">HANK with Scarring</a></li>
-<li>Bence Barosczy and Mateo Velasquez-Giraldo: “HANK Comes of Age”</li>
+<li>Bence Barosczy and Mateo Velasquez-Giraldo: <a href="https://www.federalreserve.gov/econres/feds/hank-comes-of-age.htm">HANK Comes of Age</a></li>
 <li>In progress: <a href="https://llorracc.github.io/HAFiscal">Welfare and Spending Effects of Consumption Stimulus Policies</a></li>
 </ul></li>
 </ul>
@@ -451,10 +452,10 @@ Christopher D. Carroll
 <h2>But Wait, There’s More: Indirect Inference</h2>
 <h3 id="life-cycle-model-gourinchas-parker-cagetti">Life Cycle Model (Gourinchas-Parker; Cagetti)</h3>
 <ul>
-<li><p><a href="link%20me">SolvingMicroDSOPs-Estimation</a></p></li>
-<li><p>With Bequests? (DeNardi)</p>
+<li></li>
+<li>With Bequests? (DeNardi)
 <ul>
-<li><a href="link%20me">TRP Model Notebook</a></li>
+<li><a href="https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb">TRP Model Notebook</a></li>
 </ul></li>
 </ul>
 </section>
@@ -483,7 +484,7 @@ Christopher D. Carroll
 </ul></li>
 </ul>
 </section>
-<section id="where-are-we-going-dynark" class="slide level2 smaller scrollable">
+<section id="where-are-we-going-dynark" class="slide level2 smaller">
 <h2>Where Are We Going? ‘DYNARK’:</h2>
 <ul>
 <li>Model specification tools for <strong>any</strong> Bellman Problem <a href="link%20me%20to%20latest%20pseudocode">(mockup)</a></li>
@@ -522,13 +523,12 @@ Christopher D. Carroll
 </ul></li>
 </ul>
 </section>
-<section id="underlying-motivation" class="slide level2 smaller scrollable">
+<section id="underlying-motivation" class="slide level2 smaller">
 <h2>Underlying Motivation</h2>
 <h3 id="tower-of-babel-problem">Tower of Babel problem</h3>
 <ol type="1">
-<li>Lack of transparency
+<li>Lack of transparency: What exactly <strong>is</strong> your model?
 <ul>
-<li>What exactly <strong>is</strong> your model?</li>
 <li>Lots of buried assumptions: gridpoints, boundaries, dstns</li>
 </ul></li>
 <li>Lack of replicability
