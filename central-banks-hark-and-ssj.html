@@ -244,6 +244,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -390,14 +391,14 @@ Christopher D. Carroll
 <li><em>Why</em>? Idiosyncratic shocks 100x larger than agg</li>
 <li>So agg shocks cause ‘small’ perturbation of dstn</li>
 </ul></li>
-<li><span class="math inline">\(\Rightarrow\)</span> Reiter Singularity: 2014-2018</li>
-<li>Culmination: “Sequence Space Jacobian” Toolkit: <!-- link -->
+<li><span class="math inline">\(\Rightarrow\)</span> Reiter Singularity: 2014-2018
 <ul>
+<li>Culmination: “Sequence Space Jacobian” Toolkit: <!-- link --></li>
 <li>Bring us your micro SS …
 <ul>
 <li>With Jacobians wrt PF aggregate shocks</li>
+<li>…We’ll give you the dynamic macro</li>
 </ul></li>
-<li>… We’ll give you the dynamic macro</li>
 </ul></li>
 </ul>
 </section>
@@ -430,8 +431,17 @@ Christopher D. Carroll
 </ul></li>
 <li>etc etc</li>
 </ul>
-<h3 id="easy-to-connect-to-ssj-toolkit">… Easy to Connect to SSJ toolkit</h3>
-<p>Steps: 1. Econ-ARK/HARK: 1. solve for micro steady state 1. Compute Jacobians 2. Feed results to SSJ toolkit</p>
+</section>
+<section id="easy-to-connect-to-ssj-toolkit" class="slide level2 scrollable">
+<h2>… Easy to Connect to SSJ toolkit</h2>
+<ol type="1">
+<li>Econ-ARK/HARK:
+<ol type="1">
+<li>solve for micro steady state</li>
+<li>Compute Jacobians</li>
+</ol></li>
+<li>Feed results to SSJ toolkit</li>
+</ol>
 <ul>
 <li>Documentation Notebooks
 <ul>
@@ -442,18 +452,11 @@ Christopher D. Carroll
 <ul>
 <li>Papers:
 <ul>
-<li>Will Du: JMP
-<ul>
-<li><a href="link%20me">HANK with Scarring</a></li>
-</ul></li>
-<li>Bence Barosczy and Mateo Velasquez-Giraldo:
-<ul>
+<li>Will Du: JMP <a href="link%20me">HANK with Scarring</a></li>
+<li>Bence Barosczy and Mateo Velasquez-Giraldo:</li>
 <li>“HANK Comes of Age”</li>
-</ul></li>
-<li>In progress:
-<ul>
+<li>In progress:</li>
 <li><a href="https://llorracc.github.io/HAFiscal">Welfare and Spending Effects of Consumption Stimulus Policies</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </section>
@@ -503,7 +506,7 @@ Christopher D. Carroll
 <p>‘DYNARK’: - Model specification tools for ANY Bellman Problem - <a href="link%20me%20to%20latest%20pseudocode">mockup</a></p>
 <p>Three layers: 1. Abstract mathematical description - The symbolic version that appears in the text - Describes the ‘Platonic Ideal’ of the model - What you would solve with <span class="math inline">\(\infty\)</span> computing power 2. Numerical/Approximation Details - Metaparameters like # of gridpoints for approx - Restrictions on ranges of parameters: - 1 &lt; CRRA &lt; 10 - 0.00 &lt; DiscFac &lt; 1.00 - 0.05 &lt; <span class="math inline">\(\sigma\)</span> &lt; 0.20 3. Specify Your Claims: - Concrete assertion about results: - ‘Model requires CRRA &gt; 8 to match portfolio share’</p>
 </section>
-<section id="why-these-elements" class="slide level2">
+<section id="why-these-elements" class="slide level2 scrollable">
 <h2>Why These Elements?</h2>
 <ol start="2" type="1">
 <li>and (3) allow AUTOMATIC robustness testing</li>
@@ -519,7 +522,7 @@ Christopher D. Carroll
 </ul></li>
 </ul>
 </section>
-<section id="underlying-motivation-tower-of-babel-problem" class="slide level2">
+<section id="underlying-motivation-tower-of-babel-problem" class="slide level2 scrollable">
 <h2>Underlying Motivation: Tower of Babel problem</h2>
 <ol type="1">
 <li>Lack of transparency
@@ -574,7 +577,7 @@ Christopher D. Carroll
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
