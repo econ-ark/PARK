@@ -73,18 +73,13 @@ Johns Hopkins University
 * [Consumption/Saving](link me)
 * [Portfolio Choice](link me)
 * [Liquid and Illiquid Assets](link me)
-* [Discrete-Continuous Problems](link me)
-    + [DCEGM](link me)
-* [Labor Supply](link me)
-    + [Keane and Imai](link me)
+* [Discrete-Continuous Problems](link me): [DC-EGM tool](link me)
+* [Labor Supply](link me): [Keane and Imai](link me)
 * [Medical Expense Risk](link me)
-* [Life Cycle Modeling](link me)
-    + [Solutions](link me)
-    + [Datasets](All the SCFs, with tools)
+* [Life Cycle Modeling](link me): [solutions](link me) and [datasets](All the SCFs, with tools)
 * Sophisticated Liquidity Constraints
     + [Higher rate for borrowing vs saving](link me)
     + [withdrawal penalties for retirement saving](Mateo VG JMP)
-* etc etc
 
 
 ## Where Does Econ-ARK Fit? (2/2) {.smaller}
@@ -107,7 +102,7 @@ Johns Hopkins University
 
 ## But Wait, There's More: Indirect Inference
 
-## Life Cycle Model (Gourinchas-Parker; Cagetti)
+### Life Cycle Model (Gourinchas-Parker; Cagetti)
 
 * [SolvingMicroDSOPs-Estimation](link me)
 
@@ -119,29 +114,27 @@ Johns Hopkins University
 
 * An easy-to-use standard for guaranteed replicability
     + on any computer (Mac, Win, Linux) 
-    + using any open-source language
-        - Python, R, Julia, ...
+    + using any open-source language: Python, R, Julia, ...
     + [About 26 of them](https://econ-ark.org/materials)
 
-* Builds on industry standards
-    + Docker, cff, conda, pip, ...
+* Builds on industry standards: Docker, cff, conda, pip, ...
   
 * Aim:
     + Set a standard for journals
-        -Now every journal has different requirements
-    + Results should be replicable _on submission_
-        - Editors, referees can 'kick the tires'
+        - Now every journal has different requirements
+    + Results should be replicable **on submission**
+        - Editors, referees can "kick the tires"
         - Readers can easily stand on your giant shoulders
-        - Central Banks can exchange and compare models
+        - Central banks can exchange and compare models
 
 
 ## Where Are We Going? 'DYNARK': {.smaller}
 
-* Model specification tools for **any** Bellman Problem ([mockup])(link me to latest pseudocode)
+* Model specification tools for **any** Bellman Problem [(mockup)](link me to latest pseudocode)
 * Three layers:
     1. Abstract mathematical description
         - The symbolic version that appears in the text
-        - Describes the 'Platonic Ideal' of the model
+        - Describes the "Platonic Ideal" of the model
         - What you would solve with $\infty$ computing power
     2. Numerical/approximation details
         - Metaparameters like \# of gridpoints for approx
@@ -166,8 +159,7 @@ Johns Hopkins University
 
 1. Lack of transparency
     + What exactly **is** your model?
-    + Lots of buried assumptions
-        - Gridpoints, boundaries, distributions
+    + Lots of buried assumptions: gridpoints, boundaries, dstns
 2. Lack of replicability
     + Some notorious stories (only runs on Win 8.1 w/ Matlab 8.7.6.5)
 
