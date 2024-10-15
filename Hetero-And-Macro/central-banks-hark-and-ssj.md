@@ -3,7 +3,7 @@ title: "Econ-ARK for Central Banks"
 author: "Christopher D. Carroll"
 format:
     revealjs:
-        smaller: true
+        smaller: false
         scrollable: true
 ---
 
@@ -13,14 +13,14 @@ Presentation at Sveriges Riksbank
 
 2024-10
 
-
 Christopher Carroll
 
 Johns Hopkins University 
 
 [Powered By Econ-ARK](link to button)
 
-## Microfoundations in a Nutshell
+
+## Microfoundations in a Nutshell (1/2) {.smaller}
 
 ### Prehistory
 
@@ -33,6 +33,9 @@ Johns Hopkins University
 * Rigorous treatment of uncertainty, liq constr
 * Entirely qualitative/analytical
 
+
+## Microfoundations in a Nutshell (2/2) {.smaller}
+
 ### Early 1990s: Numerical computation of SS dist'n of wealth
 
 * Life Cycle/OLG:
@@ -43,7 +46,8 @@ Johns Hopkins University
 * Aggregate _dynamics_? Hopeless:
     + requires predicting evolution of entire **distribution**
 
-## Dynamics
+
+## Dynamics {.smaller}
 
 ### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
 
@@ -57,11 +61,11 @@ Johns Hopkins University
     + So agg shocks cause 'small' perturbation of dstn
 * $\Rightarrow$ Reiter Singularity: 2014-2018
     + Culmination: "Sequence Space Jacobian" Toolkit: <!-- link -->
-    + Bring us your micro SS ...
-        - With Jacobians wrt PF aggregate shocks
+    + Bring us your micro SS and Jacobians wrt PF aggregate shocks
         - ...We'll give you the dynamic macro
 
-## Where Does Econ-ARK Fit in this Narrative?
+
+## Where Does Econ-ARK Fit? (1/2) {.smaller}
 
 ### Rich Set of Tools for SS Micro ...
 
@@ -82,7 +86,10 @@ Johns Hopkins University
     + [withdrawal penalties for retirement saving](Mateo VG JMP)
 * etc etc
 
-## ... Easy to Connect to SSJ toolkit
+
+## Where Does Econ-ARK Fit? (2/2) {.smaller}
+
+### ...Easy to Connect to SSJ toolkit
 
 1. Econ-ARK/HARK:
    1. solve for micro steady state
@@ -92,35 +99,32 @@ Johns Hopkins University
 * Documentation Notebooks
     + (links to all three of our SSJ documentation notebooks)
 
-<!-- Here I will divert to a live demo of the notebook Akshay is working on -->
-
 * Papers:
     + Will Du: [HANK with Scarring](link me)
     + Bence Barosczy and Mateo Velasquez-Giraldo: "HANK Comes of Age"
     + In progress: [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
-## But Wait, There's More: Indirect Inference (MSM)
 
-### Life Cycle Model (Gourinchas-Parker; Cagetti)
+## But Wait, There's More: Indirect Inference
+
+## Life Cycle Model (Gourinchas-Parker; Cagetti)
 
 * [SolvingMicroDSOPs-Estimation](link me)
 
 * With Bequests? (DeNardi)
   - [TRP Model Notebook](link me)
 
-### REMARKs
+
+## But Wait, There's More: REMARKS {.smaller}
 
 * An easy-to-use standard for guaranteed replicability
     + on any computer (Mac, Win, Linux) 
     + using any open-source language
         - Python, R, Julia, ...
-    + [About 26](https://econ-ark.org/materials)
+    + [About 26 of them](https://econ-ark.org/materials)
 
 * Builds on industry standards
-    + Docker
-    + cff
-    + conda 
-    + pip
+    + Docker, cff, conda, pip, ...
   
 * Aim:
     + Set a standard for journals
@@ -130,12 +134,10 @@ Johns Hopkins University
         - Readers can easily stand on your giant shoulders
         - Central Banks can exchange and compare models
 
-## Where Are We Going?
 
-### 'DYNARK': 
+## Where Are We Going? 'DYNARK': {.smaller}
 
-* Model specification tools for ANY Bellman Problem
-    + [mockup](link me to latest pseudocode)
+* Model specification tools for **any** Bellman Problem ([mockup])(link me to latest pseudocode)
 * Three layers:
     1. Abstract mathematical description
         - The symbolic version that appears in the text
@@ -147,25 +149,28 @@ Johns Hopkins University
     3. Specify your claims:
         - Concrete assertion about results
         - "Model requires CRRA > 8 to match portfolio share"
-   
+
+
 ## Why These Elements?
 
 * 2 and 3 allow **AUTOMATIC** robustness testing
-* For each approx
+* For each approx:
     + does claim fail as gridpoints increase?
-* For each restriction
-    +'parameter sweep' of values in allowed ranges
+* For each restriction:
+    + 'parameter sweep' of values in allowed ranges
 
-## Underlying Motivation: Tower of Babel problem
+
+## Underlying Motivation {.smaller}
+
+### Tower of Babel problem
 
 1. Lack of transparency
     + What exactly **is** your model?
     + Lots of buried assumptions
         - Gridpoints, boundaries, distributions
 2. Lack of replicability
-    + Some notorious stories 
-        - Only runs on Win 8.1 w Matlab 8.7.6.5 etc etc
-	
+    + Some notorious stories (only runs on Win 8.1 w/ Matlab 8.7.6.5)
+
 ### Causes:
 
 * Everyone writes their own code
