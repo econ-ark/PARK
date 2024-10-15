@@ -1,3 +1,9 @@
+---
+title: "Habits"
+author: "John Doe"
+format: revealjs
+---
+
 # Econ-ARK for Central Banks
 
 Presentation at Sveriges Riksbank

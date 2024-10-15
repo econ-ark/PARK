@@ -1,0 +1,4 @@
+project:
+  title: "Econ-ARK for Central Banks"
+  type: default
+  render: ["Hetero-And-Macro/central-banks-hark-and-ssj.md"]
