@@ -4,7 +4,7 @@ author: "Christopher D. Carroll"
 format:
     revealjs:
         smaller: false
-        scrollable: true
+        scrollable: false
 ---
 
 # Econ-ARK for Central Banks
@@ -17,7 +17,7 @@ Christopher Carroll
 
 Johns Hopkins University 
 
-[Powered By Econ-ARK](link to button)
+Powered By [Econ-ARK](http://www.econ-ark.org)
 
 
 ## Microfoundations in a Nutshell (1/2) {.smaller}
@@ -38,29 +38,29 @@ Johns Hopkins University
 
 ### Early 1990s: Numerical computation of SS dist'n of wealth
 
-* Life Cycle/OLG:
+* Life Cycle / OLG:
     + Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
     + Huggett (1996); Carroll (1997)
 * Infinite Horizon
     + Deaton (1991); Carroll (1992); Aiyagari (1994)
-* Aggregate _dynamics_? Hopeless:
+* Aggregate **dynamics**? Hopeless:
     + requires predicting evolution of entire **distribution**
 
 
 ## Dynamics {.smaller}
 
-### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
+### [Krusell-Smith (1998)](https://econ-ark.org/materials/krusellsmith/):
 
 * _mean_ of distribution $\bar{k}$ is good enough!
 * still excruciatingly slow
 
 ### Reiter (2010):
 
-* SS Micro and Dyn Macro _can be solved independently_
-    + _Why_? Idiosyncratic shocks 100x larger than agg
+* SS Micro and Dyn Macro *can be solved independently*
+    + *Why*? Idiosyncratic shocks 100x larger than agg
     + So agg shocks cause 'small' perturbation of dstn
 * $\Rightarrow$ Reiter Singularity: 2014-2018
-    + Culmination: "Sequence Space Jacobian" Toolkit: <!-- link -->
+    + Culmination: ["Sequence Space Jacobian" Toolkit](https://github.com/shade-econ/sequence-jacobian):
     + Bring us your micro SS and Jacobians wrt PF aggregate shocks
         - ...We'll give you the dynamic macro
 
@@ -69,17 +69,17 @@ Johns Hopkins University
 
 ### Rich Set of Tools for SS Micro ...
 
-<!-- Somebody please make links to relevant docs or REMARKs or DemARKs -->
-* [Consumption/Saving](link me)
-* [Portfolio Choice](link me)
-* [Liquid and Illiquid Assets](link me)
-* [Discrete-Continuous Problems](link me): [DC-EGM tool](link me)
-* [Labor Supply](link me): [Keane and Imai](link me)
-* [Medical Expense Risk](link me)
-* [Life Cycle Modeling](link me): [solutions](link me) and [datasets](All the SCFs, with tools)
+* [Consumption/Saving](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsIndShockModel.html)
+* [Portfolio Choice](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsPortfolioModel.html)
+* [Liquid and Illiquid Assets](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+* [Discrete-Continuous Problems](https://econ-ark.org/materials/dcegm-upper-envelope/): [DC-EGM tool](https://docs.econ-ark.org/Documentation/reference/tools/dcegm.html)
+* [Labor Supply](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsLaborModel.html): [Keane and Imai](https://docs.econ-ark.org/Documentation/reference/tools/incomeprocess.html)
+* [Medical Expense Risk](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsMedModel.html)
+* Life Cycle Modeling: [solutions](https://docs.econ-ark.org/examples/LifecycleModel/Cycles_tutorial.html) and [datasets](https://docs.econ-ark.org/Documentation/reference/tools/incomeprocess.html)
 * Sophisticated Liquidity Constraints
-    + [Higher rate for borrowing vs saving](link me)
-    + [withdrawal penalties for retirement saving](Mateo VG JMP)
+    + [Higher rate for borrowing vs saving](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsIndShockModel.html#HARK.ConsumptionSaving.ConsIndShockModel.KinkedRconsumerType)
+    + [Withdrawal penalties for retirement saving](https://mateovg.com/files/pdf/JMP_VelasquezGiraldoM.pdf)
+* Etc etc
 
 
 ## Where Does Econ-ARK Fit? (2/2) {.smaller}
@@ -92,11 +92,13 @@ Johns Hopkins University
 1. Feed results to SSJ toolkit
 
 * Documentation Notebooks
-    + (links to all three of our SSJ documentation notebooks)
+    + [HARK and the Sequence Space Jacobian Method](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/SSJ_example.html)
+    + Computing Heterogeneous Agent Jacobians in HARK](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/Jacobian_Example.html)
+    + [Solving Krusell-Smith Model with HARK and SSJ](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/KS-HARK-presentation.html)
 
 * Papers:
     + Will Du: [HANK with Scarring](link me)
-    + Bence Barosczy and Mateo Velasquez-Giraldo: "HANK Comes of Age"
+    + Bence Barosczy and Mateo Velasquez-Giraldo: [HANK Comes of Age](https://www.federalreserve.gov/econres/feds/hank-comes-of-age.htm)
     + In progress: [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
 
@@ -104,10 +106,10 @@ Johns Hopkins University
 
 ### Life Cycle Model (Gourinchas-Parker; Cagetti)
 
-* [SolvingMicroDSOPs-Estimation](link me)
+* [SolvingMicroDSOPs]: (https://github.com/econ-ark/SolvingMicroDSOPs)
 
 * With Bequests? (DeNardi)
-  - [TRP Model Notebook](link me)
+  - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb)
 
 
 ## But Wait, There's More: REMARKS {.smaller}
@@ -157,8 +159,7 @@ Johns Hopkins University
 
 ### Tower of Babel problem
 
-1. Lack of transparency
-    + What exactly **is** your model?
+1. Lack of transparency: What exactly **is** your model?
     + Lots of buried assumptions: gridpoints, boundaries, dstns
 2. Lack of replicability
     + Some notorious stories (only runs on Win 8.1 w/ Matlab 8.7.6.5)
