@@ -2,16 +2,26 @@
 title: Econ-ARK for Central Banks
 author:
   - name: Christopher D. Carroll
-    orcid: 0000-0002-1234-5678
+    orcid: 0000-0003-3732-9312
     email: ccarroll@llorracc.org
     affiliations: 
         - Johns Hopkins University
         - Econ-ARK
-format: clean-revealjs
+format: 
+    metropolis-revealjs: default
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 date: last-modified
+date-format: "MMMM DD, YYYY"
+footer: <https://econ-ark.org>
+slide-number: true
+embed-resources: true
+logo: ../numfocus-logo.png
+reveal-header:
+    sc-sb-title: true
+    header-logo: ../econ-ark-logo.png
+    header-text: Powered by Econ-ARK
 ---
 
 
