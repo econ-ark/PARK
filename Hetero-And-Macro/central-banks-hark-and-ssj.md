@@ -1,7 +1,10 @@
 ---
 title: "Econ-ARK for Central Banks"
 author: "Christopher D. Carroll"
-format: revealjs
+format:
+    revealjs:
+        smaller: true
+        scrollable: true
 ---
 
 # Econ-ARK for Central Banks
@@ -44,60 +47,59 @@ Johns Hopkins University
 
 ### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
 
-   - _mean_ of distribution $\bar{k}$ is good enough!
-   - still excruciatingly slow
+* _mean_ of distribution $\bar{k}$ is good enough!
+* still excruciatingly slow
 
 ### Reiter (2010):
 
-   - SS Micro and Dyn Macro _can be solved independently_
-	 - _Why_? Idiosyncratic shocks 100x larger than agg
-	 - So agg shocks cause 'small' perturbation of dstn
-   - $\Rightarrow$ Reiter Singularity: 2014-2018
-   - Culmination: "Sequence Space Jacobian" Toolkit: <!-- link -->
-     - Bring us your micro SS ...
-	   - With Jacobians wrt PF aggregate shocks
-	 - ... We'll give you the dynamic macro
+* SS Micro and Dyn Macro _can be solved independently_
+    + _Why_? Idiosyncratic shocks 100x larger than agg
+    + So agg shocks cause 'small' perturbation of dstn
+* $\Rightarrow$ Reiter Singularity: 2014-2018
+    + Culmination: "Sequence Space Jacobian" Toolkit: <!-- link -->
+    + Bring us your micro SS ...
+        - With Jacobians wrt PF aggregate shocks
+        - ...We'll give you the dynamic macro
 
 ## Where Does Econ-ARK Fit in this Narrative?
 
 ### Rich Set of Tools for SS Micro ...
 
 <!-- Somebody please make links to relevant docs or REMARKs or DemARKs -->
-- [Consumption/Saving](link me)
-- [Portfolio Choice](link me)
-- [Liquid and Illiquid Assets](link me)
-- [Discrete-Continuous Problems](link me)
-  - [DCEGM](link me)
-- [Labor Supply](link me)
-  - [Keane and Imai](link me)
-- [Medical Expense Risk](link me)
-- [Life Cycle Modeling](link me)
-  - [Solutions](link me)
-  - [Datasets](All the SCFs, with tools)
-- Sophisticated Liquidity Constraints
-  - [Higher rate for borrowing vs saving](link me)
-  - [withdrawal penalties for retirement saving](Mateo VG JMP)
-- etc etc
+* [Consumption/Saving](link me)
+* [Portfolio Choice](link me)
+* [Liquid and Illiquid Assets](link me)
+* [Discrete-Continuous Problems](link me)
+    + [DCEGM](link me)
+* [Labor Supply](link me)
+    + [Keane and Imai](link me)
+* [Medical Expense Risk](link me)
+* [Life Cycle Modeling](link me)
+    + [Solutions](link me)
+    + [Datasets](All the SCFs, with tools)
+* Sophisticated Liquidity Constraints
+    + [Higher rate for borrowing vs saving](link me)
+    + [withdrawal penalties for retirement saving](Mateo VG JMP)
+* etc etc
 
-### ... Easy to Connect to SSJ toolkit
+## ... Easy to Connect to SSJ toolkit
 
-Steps:
 1. Econ-ARK/HARK:
    1. solve for micro steady state
    1. Compute Jacobians 
-2. Feed results to SSJ toolkit
+1. Feed results to SSJ toolkit
 
-- Documentation Notebooks
-  - (links to all three of our SSJ documentation notebooks)
+* Documentation Notebooks
+    + (links to all three of our SSJ documentation notebooks)
 
 <!-- Here I will divert to a live demo of the notebook Akshay is working on -->
 
-- Papers:
-  - Will Du: JMP
-    - [HANK with Scarring](link me)
-  - Bence Barosczy and Mateo Velasquez-Giraldo:
+* Papers:
+    + Will Du: JMP
+        [HANK with Scarring](link me)
+    + Bence Barosczy and Mateo Velasquez-Giraldo:
 	- "HANK Comes of Age"
-  - In progress:
+    + In progress:
 	- [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
 ## But Wait, There's More: Indirect Inference (MSM)
