@@ -1,23 +1,18 @@
 ---
-title: "Econ-ARK for Central Banks"
-author: "Christopher D. Carroll"
-format:
-    revealjs:
-        smaller: false
-        scrollable: false
+title: Econ-ARK for Central Banks
+author:
+  - name: Christopher D. Carroll
+    orcid: 0000-0002-1234-5678
+    email: ccarroll@llorracc.org
+    affiliations: 
+        - Johns Hopkins University
+        - Econ-ARK
+format: clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+date: last-modified
 ---
-
-# Econ-ARK for Central Banks
-
-Presentation at Sveriges Riksbank
-
-2024-10
-
-Christopher Carroll
-
-Johns Hopkins University 
-
-Powered By [Econ-ARK](http://www.econ-ark.org)
 
 
 ## Microfoundations in a Nutshell (1/2) {.smaller}
