@@ -86,7 +86,7 @@ Johns Hopkins University
 
 1. Econ-ARK/HARK:
    1. solve for micro steady state
-   1. Compute Jacobians 
+   1. compute Jacobians 
 1. Feed results to SSJ toolkit
 
 * Documentation Notebooks
@@ -95,87 +95,81 @@ Johns Hopkins University
 <!-- Here I will divert to a live demo of the notebook Akshay is working on -->
 
 * Papers:
-    + Will Du: JMP
-        [HANK with Scarring](link me)
-    + Bence Barosczy and Mateo Velasquez-Giraldo:
-	- "HANK Comes of Age"
-    + In progress:
-	- [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
+    + Will Du: [HANK with Scarring](link me)
+    + Bence Barosczy and Mateo Velasquez-Giraldo: "HANK Comes of Age"
+    + In progress: [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
 ## But Wait, There's More: Indirect Inference (MSM)
 
 ### Life Cycle Model (Gourinchas-Parker; Cagetti)
 
-- [SolvingMicroDSOPs-Estimation](link me)
+* [SolvingMicroDSOPs-Estimation](link me)
 
-- With Bequests? (DeNardi)
+* With Bequests? (DeNardi)
   - [TRP Model Notebook](link me)
 
 ### REMARKs
 
-- An easy-to-use standard for guaranteed replicability
-  - on any computer (Mac, Win, Linux) 
-  - using any open-source language
-	- python, R, julia, ...
-  - [About 26](https://econ-ark.org/materials)
+* An easy-to-use standard for guaranteed replicability
+    + on any computer (Mac, Win, Linux) 
+    + using any open-source language
+        - Python, R, Julia, ...
+    + [About 26](https://econ-ark.org/materials)
 
-- Builds on industry standards
-  - Docker
-  - cff
-  - conda 
-  - pip
+* Builds on industry standards
+    + Docker
+    + cff
+    + conda 
+    + pip
   
-- Aim:
-  - Set a standard for journals
-	- Now every journal has different requirements
-  - Results should be replicable _on submission_
-	- Editors, referees can 'kick the tires'
-	- Readers can easily stand on your giant shoulders
-	- Central Banks can exchange and compare models
+* Aim:
+    + Set a standard for journals
+        -Now every journal has different requirements
+    + Results should be replicable _on submission_
+        - Editors, referees can 'kick the tires'
+        - Readers can easily stand on your giant shoulders
+        - Central Banks can exchange and compare models
 
-### Where Are We Going?
+## Where Are We Going?
 
-'DYNARK': 
-- Model specification tools for ANY Bellman Problem
-- [mockup](link me to latest pseudocode)
+### 'DYNARK': 
 
-Three layers:
-1. Abstract mathematical description
-  - The symbolic version that appears in the text
-  - Describes the 'Platonic Ideal' of the model
-  - What you would solve with $\infty$ computing power
-2. Numerical/Approximation Details
-   - Metaparameters like \# of gridpoints for approx
-   - Restrictions on ranges of parameters:
-	 - 1 < CRRA < 10
-	 - 0.00 < DiscFac < 1.00
-	 - 0.05 < $\sigma$ < 0.20
-3. Specify Your Claims:
-   - Concrete assertion about results:
-   - 'Model requires CRRA > 8 to match portfolio share'
+* Model specification tools for ANY Bellman Problem
+    + [mockup](link me to latest pseudocode)
+* Three layers:
+    1. Abstract mathematical description
+        - The symbolic version that appears in the text
+        - Describes the 'Platonic Ideal' of the model
+        - What you would solve with $\infty$ computing power
+    2. Numerical/approximation details
+        - Metaparameters like \# of gridpoints for approx
+        - Restrictions on ranges of parameters (e.g. 1 < CRRA < 10)
+    3. Specify your claims:
+        - Concrete assertion about results
+        - "Model requires CRRA > 8 to match portfolio share"
    
 ## Why These Elements?
 
-(2) and (3) allow AUTOMATIC robustness testing
-- For each approx
-  - does claim fail as gridpoints increase?
-- For each restriction
-  - 'parameter sweep' of values in allowed ranges
+* 2 and 3 allow **AUTOMATIC** robustness testing
+* For each approx
+    + does claim fail as gridpoints increase?
+* For each restriction
+    +'parameter sweep' of values in allowed ranges
 
 ## Underlying Motivation: Tower of Babel problem
 
 1. Lack of transparency
-	- What exactly _is_ your model?
-	- Lots of buried assumptions
-		- Gridpoints, boundaries, distributions
+    + What exactly **is** your model?
+    + Lots of buried assumptions
+        - Gridpoints, boundaries, distributions
 2. Lack of replicability
-	- Some notorious stories 
-	- Only runs on Win 8.1 w Matlab 8.7.6.5 etc etc
+    + Some notorious stories 
+        - Only runs on Win 8.1 w Matlab 8.7.6.5 etc etc
 	
-Causes:
-	- Everyone writes their own code
-		- Often inherited from advisor
-		- Barriers to entry
-	- Can take months just to get someone else's model working
-		- quicker to build on your own Byzantine legacy code
+### Causes:
 
+* Everyone writes their own code
+    + Often inherited from advisor
+    + Barriers to entry
+* Can take months just to get someone else's model working
+    + Quicker to build on your own Byzantine legacy code
