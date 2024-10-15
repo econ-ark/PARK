@@ -17,36 +17,29 @@ Johns Hopkins University
 
 [Powered By Econ-ARK](link to button)
 
-<!-- Conventions
-## marks a new slide
-### marks a header in a slide
--->
-
 ## Microfoundations in a Nutshell
-<!-- I'm going to review this very quickly to set the scene -->
 
 ### Prehistory
 
-    - Modigliani and Brumberg (1954), Friedman (1957), Diamond (1964)
-    - Perfect Foresight models: 1960s-70s
+* Modigliani and Brumberg (1954), Friedman (1957), Diamond (1964)
+* Perfect Foresight models: 1960s-70s
 	
 ### Bewley (1977)
 
-    - Formalization of Friedman PIH
-    - Rigorous treatment of uncertainty, liq constr
-    - Entirely qualitative/analytical
+* Formalization of Friedman PIH
+* Rigorous treatment of uncertainty, liq constr
+* Entirely qualitative/analytical
 
 ### Early 1990s: Numerical computation of SS dist'n of wealth
 
-    - Life Cycle/OLG:
-        - Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
-        - Huggett (1996); Carroll (1997)
-        - Infinite Horizon
-            - Deaton (1991); Carroll (1992); Aiyagari (1994)
-	- Aggregate _dynamics_? Hopeless:
-		- requires predicting evolution of entire **distribution**
+* Life Cycle/OLG:
+    + Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
+    + Huggett (1996); Carroll (1997)
+* Infinite Horizon
+    + Deaton (1991); Carroll (1992); Aiyagari (1994)
+* Aggregate _dynamics_? Hopeless:
+    + requires predicting evolution of entire **distribution**
 
-<!-- new slide --> 
 ## Dynamics
 
 ### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
