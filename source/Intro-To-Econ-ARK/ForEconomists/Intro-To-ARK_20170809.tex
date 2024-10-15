@@ -1,0 +1,456 @@
+\documentclass[public]{beamer}
+\usepackage{ifthen}
+\usepackage{econtexShortcuts}
+\usepackage{verbatim}
+\usepackage{moreverb}
+
+\provideboolean{CEF2016}
+\setboolean{CEF2016}{true}
+\setboolean{CEF2016}{false}
+\providecommand{\ifCEF}{\ifthenelse{\boolean{CEF2016}}}
+
+\provideboolean{Fed2016}
+\setboolean{Fed2016}{true}
+\providecommand{\ifFed}{\ifthenelse{\boolean{Fed2016}}}
+
+\usetheme{Madrid}
+\definecolor{orange}{HTML}{FF7F00}
+\hypersetup{colorlinks,linkcolor=,urlcolor=orange}
+%\usepackage{econtexSetup}
+
+% Redefine footer from
+% http://tex.stackexchange.com/questions/83048/change-the-contents-of-footline-in-a-beamer-presentation
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertsubsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\providecommand{\ARK}{\href{http://econ-ark.org}{econ-ark.org}}
+
+\providecommand{\CDC}{\texttt{CDC}}
+\providecommand{\NMP}{\texttt{NMP}}
+\providecommand{\MNW}{\texttt{MNW}}
+\providecommand{\DCL}{\texttt{DCL}}
+\providecommand{\JXY}{\texttt{JXY}}
+\providecommand{\AMK}{\texttt{AMK}}
+
+
+\beamerdefaultoverlayspecification{<+->}
+
+
+\usepackage{natbib}
+\begin{document}
+\title[\ARK]{Introducing  the Computational Economics \\ ``Algorithmic Repository and toolKit'' \\
+\href{http://econ-ark.org}{econ-ark.org}}
+
+\author[Chris Carroll]{Presentation by Chris Carroll \\
+\ifCEF{Computation in Economics and Finance (CEF), Bordeaux}{}
+\ifFed{Federal Reserve Board}{}
+}
+\date{
+\ifCEF{June, 2016}{}
+\ifFed{Sep, 2016}{}
+}
+
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Who, What, Where, When, Why, How}
+\subsection{What}
+
+\begin{frame}
+\frametitle{What Is It?}
+
+State-of-the-art set of tools for:
+
+\begin{enumerate} \pause
+\item Solving dynamic stochastic optimization problems
+\begin{itemize}
+\item Particularly adapted for Bellman problems with `kinks' and quirks
+\end{itemize}
+\item Simulating behavior of populations of agents
+\begin{itemize}
+\item A Market
+\item A Small Open Economy
+\item General Equilibrium
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{What Is It Good For?}
+
+\begin{itemize}
+\item Heterogeneous Agent Macro Models
+\begin{itemize}
+\item Original name: {\bf H}eterogeneous {\bf A}gent {\bf R}esources and tool{\bf K}it
+\item HARK!
+\end{itemize}
+\item Structural Micro Models (e.g., labor, health)
+\item IO models with optimizing consumers and firms
+\item {\bf N}ot {\bf O}nly {\bf A}bout {\bf H}eterogeneous {\bf s}tuff ... 
+\item ... {\bf A}lgorithmic {\bf R}esources and tool{\bf K}it 
+\item :-)
+\begin{itemize}
+\item Unlike Noah's, our ARK can hold more than two of each kind!
+\item Ultimate goal: Get examples on the ARK of all types of animal (model)
+\end{itemize}
+\end{itemize}
+
+
+\end{frame}
+
+\subsection{Where}
+\begin{frame}
+\frametitle{Where Is It?}
+
+\begin{center}
+{\ARK} is the project's home
+\end{center}
+
+\begin{enumerate}
+\item Get a GitHub account.  Then, options to access are
+\begin{itemize}
+\item Install GitHub Desktop App
+\item Install `git' command-line tool (if you're hard-core)
+\end{itemize}
+\item \texttt{HARK} is a ``public repo'' 
+\begin{itemize}
+\item Contains all existing code (as of now)
+\end{itemize}
+\item \texttt{HARK/Documentation/NARK.pdf}
+\begin{itemize}
+\item Describes variable naming conventions for easy workflow: 
+\item {\LaTeX} object definitions correspond to HARK definitions 
+\end{itemize}
+%\item Similar structure will be used for future contributions:
+%\begin{itemize}
+%\item {\bf A}gent {\bf A}rchive {\bf R}epository {\bf D}eposit {\bf V}ehicle for ARK?
+%\end{itemize}
+\item Instructions for cloning are in the \texttt{README.txt}
+\item You get the whole codebase under the Apache 2.0 license 
+\begin{itemize}
+\item Basically, no limitations on use
+\item But, please credit us, and participate in discussions
+\end{itemize}
+\end{enumerate}
+
+\end{frame}
+
+\subsection{Who}
+\begin{frame}
+\frametitle{Who Has Produced It?}
+
+\begin{footnotesize}
+\begin{center}
+
+\begin{tabular}{lll}
+Name & TLA & Affiliation % & Contact
+\\ \hline \hline {\it Christopher D Carroll} & \texttt{{\CDC}} & JHU, CFPB % & \href{mailto:ccarroll@llorracc.org}{ccarroll@llorracc.org}
+\\ {\it David C Low} & \texttt{{\DCL}} & CFPB % & \href{mailto:ccarroll@llorracc.org}{ccarroll@llorracc.org}
+\\ {\it Nathan M Palmer} & \texttt{{\NMP}} & OFR % & \href{malito:nathan.m.palmer@gmail.com}{nathan.m.palmer@gmail.com}
+\\ {\it Matthew N White} & \texttt{{\MNW}} & UDel, CFPB % & \href{mailto:mnwhite@gmail.com}{mnwhite@gmail.com}
+\\ \hline {\it Alex Kaufman} & \texttt{{\AMK}} & CFPB $\rightarrow$ ? (Alcatraz?)  %& \href{mailto:alexander.kaufman@cfpb.gov}{No Fixed Address; Expected: Alcatraz}
+\\ {\it Jiaxiong Yao} & \texttt{JXY} & JHU $\rightarrow$ IMF  %& \href{mailto:alexander.kaufman@cfpb.gov}{No Fixed Address; Expected: Alcatraz}
+\end{tabular}
+\end{center}
+
+
+Nothing herein may be interpreted as reflecing opinions of 
+\begin{center}
+\begin{tabular}{rcl}
+ CFPB & - & United States Consumer Financial Protection Bureau
+\\ JHU & - & Johns Hopkins University
+\\ IMF & - & International Monetary Fund
+\\ OFR & - & Office of Financial Research, U.S.\ Treasury
+\\ UDel & - & University of Delaware
+\end{tabular}
+
+\end{center}
+
+
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Major credit goes to CFPB - a 21st Century Regulator!}
+
+\begin{itemize}
+\item Hired {\CDC} as Chief Economist with this as a key priority
+\item Hired {\NMP} as intern to get started
+\item Hired {\MNW} as Visiting Scholar to work on it
+\item Hired {\DCL} as new economist last year
+\item Hired {\AMK} as RA
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Organization Going Forward}
+
+Standard Github tools, esp:
+\begin{itemize}
+\item Issue Tracker: If You See Something, Say Something
+\end{itemize}
+\begin{center}
+{\bf Topic Czars}
+
+\begin{itemize}
+\item Gatekeeper for Contributions
+\item Responsible for Setting Out Tests A Module Should Pass
+\begin{itemize}
+\item e.g.\ Special Cases With Analytical Solutions
+\item Metrics for ``closeness'' to ``true'' solution
+\end{itemize}
+\end{itemize}
+
+\pause 
+\begin{tabular}{lll}
+Name & Topic & Affiliation
+\\ \hline  Serguei Maliar & Interpolation & Stanford %& \href{mailto:ccarroll@llorracc.org}{ccarroll@llorracc.org}
+\\ Lilia Maliar & Interpolation & Stanford % & \href{}{mailto:ccarroll@llorracc.org}
+\\  \multicolumn{3}{c}{{\it We're Seeking Volunteers for Czars}}
+\end{tabular}
+\end{center}
+
+\pause
+\begin{tabular}{rcl}
+\hline \href{mailto:info@econ-ark.org}{info@econ-ark.org} & - & General Purpose Questions
+\\ \href{mailto:czars@econ-ark.org}{czars@econ-ark.org} & - & Volunteer to be a Czar
+\\ \href{mailto:ideas@econ-ark.org}{ideas@econ-ark.org} & - & Ideas for Improvement
+\end{tabular}
+
+
+\end{frame}
+
+\subsection{When}
+
+\begin{frame}
+\frametitle{Timeline}
+
+\begin{center}
+\begin{tabular}{rll}
+When & What & Lessons
+\\ \hline 2006-2013 & \href{http://econ.jhu.edu/people/ccarroll/SolvingMicroDSOPs}{SolvingMicroDSOPs} & Surprisingly popular
+\\ 2014-12 & \href{}{IMF-CFPB Workshop} & Lots of enthusiasm
+\\ 2015-12 & \href{}{CFPB-IMF Workshop} & Not HARK, ARK!  
+\\ & & Testing, Replication, Feedback
+\\ 2016-06 & CEF Toulouse & Discuss CEF sponsorship 
+\\ 2016-08 & IMF Macro Modeling & Armenia is Near Mt Ararat
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item The version at \href{econ-ark.org}{http://econ-ark.org}  is our ``public beta''
+\item So far as we know, everything works
+\item First non-beta: Built-in tests for {\it everything}
+\begin{itemize}
+\item Aim: This year
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\subsection{Why?}
+\begin{frame}
+\frametitle{Why Are Policy Institutions So Interested?}
+
+Participation: CFPB, OFR, IMF 
+
+Interest From: FRB, ECB, BLS
+
+\begin{itemize}
+\item Policymaking = Applied Theory.  Options:
+\begin{enumerate}
+\item Informal, intuitive, ``wetware'' theory 
+\item Formal, structural, ``software'' theory 
+\end{enumerate}
+\end{itemize}
+
+\end{frame}
+
+\ifCEF{
+\begin{frame}
+\frametitle{LATE is Antediluvian}
+
+`Local Average Treatment Effects' results are 
+\begin{itemize}
+  \item {\bf N}ot {\bf E}ven {\bf V}ery {\bf E}mpirically {\bf R}elevant ...
+  \item UNLESS used to estimate `structural' parameters
+\item Because the important question is
+\begin{itemize}
+\item What does world look like {\it non-locally} ...
+\item ... {\it after} the policy change
+\item and maybe not even just ``on average''
+\begin{itemize}
+\item because distributional/targeted impact may be whole point
+\end{itemize}
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+}{}
+\ifCEF{
+\begin{frame}
+\frametitle{Welfare Analysis With Heterogeneity}
+
+Sensible cost-benefit analysis requires:
+\begin{itemize}
+\item Estimates of distribution of heterogeneous outcomes 
+\item Utility or other weighting of those outcomes
+\item $\rightarrow$ Structure
+\end{itemize}
+
+\end{frame}
+}{}
+
+\subsection{How}
+
+\begin{frame}
+\frametitle{{\it The Invention of Science} by David Wootton}
+
+Wrong explanations for the Scientific Revolution: \pause 
+\begin{itemize}
+\item Invention of `the experiment'
+\item Invention of the printing press
+\item Protestant Reformation
+\item ... 
+\end{itemize}
+\medskip\medskip
+
+\pause 
+Right explanation:
+\begin{itemize}
+\item Creation of community of scholars
+\item ... whose methods and results were `open source'
+\item ... who criticized and improved and debugged each other
+\end{itemize}
+
+\medskip
+\pause
+Alchemy $\rightarrow$ Chemistry
+
+\medskip
+\pause 
+17th and 18th century version of \href{http://github.com}{github.com}!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Economists are People Too ...}
+
+\begin{itemize} \pause 
+\item We are {\it way} behind many scientific fields in `open source' code
+\item Surveys/Experiments: Economics students are more `selfish.'
+\item Options: \pause
+\begin{enumerate}
+\item `selfish' people study economics
+\item Studying economics makes you selfish!
+\item Economics students are just more honest
+\end{enumerate}
+\end{itemize}
+
+\pause I prefer (3)!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Lessons Learned from Other Fields About What Works}
+
+\begin{itemize}
+\item Not taking a dewy-eyed ``Build it and they will come'' view
+\item Emprical fact: Many other open source communities have succeeded
+\item Fairly extensive literature about what makes for success
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{In Addition to Usual Github Tools}
+
+\begin{itemize}
+\item Czars for specific topics
+\item Bounties for Best Solution of Specific Problems
+\bi
+\item Durable Goods (e.g., cars, houses)
+\item Search Models of Labor Markets
+\item ... 
+\ei
+\item Time-Stamped Public Mechanism for Staking a Claim to New Idea
+\item Stack-Exchange-Like Q\&A Forum
+\item Mechanisms for Easy Creation of Grad Student Problem Sets
+\item Tool for Grad Student Replication Exercises
+\item Eventually, a Journal modeled on the Journal of Statistical Software
+\bi
+\item NOT: {\bf J}ournal {\bf O}f {\bf C}omputational {\bf E}cononmics {\bf S}oftware
+\ei
+\item Regular (annual or biannual conferences with presentations)
+\item ... Your Ideas?  \href{mailto:ideas@econ-ark.org}{ideas@econ-ark.org}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Specific Incentives for Government Agencies}
+
+Need to make it easy to include contributions in performance plans
+\begin{itemize}
+\item Measures of progress
+\item Measures of usefulness
+\item Measures of organizational contributions
+\item Measures of the use of the tools in papers
+\end{itemize}
+
+Persuade institutions to contribute noneconomist resources:
+\begin{itemize}
+\item RA's
+\item ARC should work on the ARK!
+\item Hired outside programmers for specific desired functions
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Join our (Scientific) Revolution!}
+
+\providecommand{\subscribe}{\href{mailto:subscribe@econ-ark.org}{subscribe@econ-ark.org}}
+\providecommand{\letmehelpwith}{\href{mailto:letmehelpwith@econ-ark.org}{letmehelpwith@econ-ark.org}}
+Options:
+\begin{itemize}
+\item \subscribe
+\begin{itemize}
+\item Add me to the newsletter/mailing list
+\end{itemize}
+\item {\it Read the docs and slides} and absorb what exists now.  Options:
+\begin{enumerate}
+\item Add an `issue' that you want to tackle on \ARK
+\item \letmehelpwith
+\begin{enumerate}
+\item Define some area that you'd like to contribute to
+\item email us at this address outlining what you propose to do
+\item We'll reply with some suggestions
+\end{enumerate}
+\end{enumerate}
+\end{itemize}
+
+\end{frame}
+
+\end{document}
+
