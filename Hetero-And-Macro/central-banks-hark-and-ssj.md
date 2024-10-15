@@ -1,6 +1,6 @@
 ---
-title: "Habits"
-author: "John Doe"
+title: "Econ-ARK for Central Banks"
+author: "Christopher D. Carroll"
 format: revealjs
 ---
 
@@ -26,31 +26,36 @@ Johns Hopkins University
 <!-- I'm going to review this very quickly to set the scene -->
 
 ### Prehistory
-	- Modigliani and Brumberg (1954), Friedman (1957), Diamond (1964)
-	- Perfect Foresight models: 1960s-70s
+
+    - Modigliani and Brumberg (1954), Friedman (1957), Diamond (1964)
+    - Perfect Foresight models: 1960s-70s
 	
 ### Bewley (1977)
+
     - Formalization of Friedman PIH
-	- Rigorous treatment of uncertainty, liq constr
-	- Entirely qualitative/analytical
+    - Rigorous treatment of uncertainty, liq constr
+    - Entirely qualitative/analytical
 
 ### Early 1990s: Numerical computation of SS dist'n of wealth
-	- Life Cycle/OLG:
-		- Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
-		- Hugget (1996); Carroll (1997)
-	- Infinite Horizon
-		- Deaton (1991); Carroll (1992); Aiyagari (1994)
+
+    - Life Cycle/OLG:
+        - Zeldes (1989); Hubbard, Skinner, and Zeldes (1994, 1995);
+        - Huggett (1996); Carroll (1997)
+        - Infinite Horizon
+            - Deaton (1991); Carroll (1992); Aiyagari (1994)
 	- Aggregate _dynamics_? Hopeless:
-		- requires predicting evolution of entire _distribution_
+		- requires predicting evolution of entire **distribution**
 
 <!-- new slide --> 
 ## Dynamics
 
 ### Krusell-Smith (1998): <!-- somebody add link to our KS replication -->
+
    - _mean_ of distribution $\bar{k}$ is good enough!
    - still excruciatingly slow
 
-### Reiter (2010): 
+### Reiter (2010):
+
    - SS Micro and Dyn Macro _can be solved independently_
 	 - _Why_? Idiosyncratic shocks 100x larger than agg
 	 - So agg shocks cause 'small' perturbation of dstn
