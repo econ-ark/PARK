@@ -22,10 +22,11 @@ reveal-header:
     sc-sb-title: true
     header-logo: ../econ-ark-logo.png
     header-text: Powered by Econ-ARK
+incremental: true
 ---
 
 
-## Microfoundations in a Nutshell (1/2) {.smaller}
+## Microfoundations in a Nutshell (1/2)
 
 ### Prehistory
 
@@ -39,7 +40,7 @@ reveal-header:
 * Entirely qualitative/analytical
 
 
-## Microfoundations in a Nutshell (2/2) {.smaller}
+## Microfoundations in a Nutshell (2/2)
 
 ### Early 1990s: Numerical computation of SS dist'n of wealth
 
@@ -52,7 +53,7 @@ reveal-header:
     + requires predicting evolution of entire **distribution**
 
 
-## Dynamics {.smaller}
+## Dynamics
 
 ### [Krusell-Smith (1998)](https://econ-ark.org/materials/krusellsmith/):
 
@@ -70,7 +71,7 @@ reveal-header:
         - ...We'll give you the dynamic macro
 
 
-## Where Does Econ-ARK Fit? (1/2) {.smaller}
+## Where Does Econ-ARK Fit? (1/2)
 
 ### Rich Set of Tools for SS Micro ...
 
@@ -87,7 +88,7 @@ reveal-header:
 * Etc etc
 
 
-## Where Does Econ-ARK Fit? (2/2) {.smaller}
+## Where Does Econ-ARK Fit? (2/2)
 
 ### ...Easy to Connect to SSJ toolkit
 
@@ -117,7 +118,7 @@ reveal-header:
   - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb)
 
 
-## But Wait, There's More: REMARKS {.smaller}
+## But Wait, There's More: REMARKS
 
 * An easy-to-use standard for guaranteed replicability
     + on any computer (Mac, Win, Linux) 
@@ -135,7 +136,7 @@ reveal-header:
         - Central banks can exchange and compare models
 
 
-## Where Are We Going? 'DYNARK': {.smaller}
+## Where Are We Going? 'DYNARK':
 
 * Model specification tools for **any** Bellman Problem [(mockup)](https://raw.githubusercontent.com/econ-ark/OverARK/refs/heads/master/Development/pablo/ModelOnlyBlockRework.yaml)
 * Three layers:
@@ -160,7 +161,7 @@ reveal-header:
     + 'parameter sweep' of values in allowed ranges
 
 
-## Underlying Motivation {.smaller}
+## Underlying Motivation
 
 ### Tower of Babel problem
 
