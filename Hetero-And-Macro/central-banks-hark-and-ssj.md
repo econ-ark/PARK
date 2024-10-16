@@ -102,7 +102,7 @@ incremental: true
     + [Solving Krusell-Smith Model with HARK and SSJ](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/KS-HARK-presentation.html)
 
 * Papers:
-    + Will Du: [Macroeconomic Consequences of Unemployment Scarring](link me)
+    + Will Du: [Macroeconomic Consequences of Unemployment Scarring](https://github.com/wdu9/JMP/blob/main/JMPDraft.pdf)
     + Bence Barosczy and Mateo Velasquez-Giraldo: [HANK Comes of Age](https://www.federalreserve.gov/econres/feds/hank-comes-of-age.htm)
     + In progress: [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
