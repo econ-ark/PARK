@@ -114,7 +114,7 @@ incremental: true
 * [SolvingMicroDSOPs](https://github.com/econ-ark/SolvingMicroDSOPs) 
 
 * With Bequests? (DeNardi)
-  - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb)
+  - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/econ-ark/EstimatingMicroDSOPs/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Fecon-ark%2FEstimatingMicroDSOPs%2Fblob%2Fmain%2Fsrc%2Fnotebooks%2FModel_Comparisons.ipynb)
 
 
 ## But Wait, There's More: REMARKS
