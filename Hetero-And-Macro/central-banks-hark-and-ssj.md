@@ -77,7 +77,6 @@ incremental: true
 
 * [Consumption/Saving](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsIndShockModel.html)
 * [Portfolio Choice](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsPortfolioModel.html)
-* [Liquid and Illiquid Assets](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 * [Discrete-Continuous Problems](https://econ-ark.org/materials/dcegm-upper-envelope/): [DC-EGM tool](https://docs.econ-ark.org/Documentation/reference/tools/dcegm.html)
 * [Labor Supply](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsLaborModel.html): [Keane and Imai](https://docs.econ-ark.org/Documentation/reference/tools/incomeprocess.html)
 * [Medical Expense Risk](https://docs.econ-ark.org/Documentation/reference/ConsumptionSaving/ConsMedModel.html)
@@ -88,7 +87,7 @@ incremental: true
 * Etc etc
 
 
-## Where Does Econ-ARK Fit? (2/2)
+## Where Does Econ-ARK Fit? (2/2) {.smaller}
 
 ### ...Easy to Connect to SSJ toolkit
 
@@ -103,7 +102,7 @@ incremental: true
     + [Solving Krusell-Smith Model with HARK and SSJ](https://docs.econ-ark.org/examples/ConsNewKeynesianModel/KS-HARK-presentation.html)
 
 * Papers:
-    + Will Du: [HANK with Scarring](link me)
+    + Will Du: [Macroeconomic Consequences of Unemployment Scarring](link me)
     + Bence Barosczy and Mateo Velasquez-Giraldo: [HANK Comes of Age](https://www.federalreserve.gov/econres/feds/hank-comes-of-age.htm)
     + In progress: [Welfare and Spending Effects of Consumption Stimulus Policies](https://llorracc.github.io/HAFiscal)
 
