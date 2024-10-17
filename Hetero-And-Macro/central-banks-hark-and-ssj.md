@@ -117,12 +117,12 @@ incremental: true
   - [TRP Model Notebook](https://github.com/econ-ark/EstimatingMicroDSOPs/blob/main/src/notebooks/Model_Comparisons.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/econ-ark/EstimatingMicroDSOPs/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Fecon-ark%2FEstimatingMicroDSOPs%2Fblob%2Fmain%2Fsrc%2Fnotebooks%2FModel_Comparisons.ipynb)
 
 
-## But Wait, There's More: REMARKS
+## But Wait, There's More: [REMARKS](https://github.com/econ-ark/REMARK/blob/main/README.md)
 
 * An easy-to-use standard for guaranteed replicability
     + on any computer (Mac, Win, Linux) 
     + using any open-source language: Python, R, Julia, ...
-    + [About 26 of them](https://econ-ark.org/materials)
+    + [About 26 of them](https://econ-ark.org/materials/?select=REMARK)
 
 * Builds on industry standards: Docker, cff, conda, pip, ...
   
